@@ -1,0 +1,59 @@
+.client-review-section{
+    padding:7rem;
+    padding-inline:0;
+}
+.client-review-section>h4{
+    text-transform: uppercase;
+    color:  hsl(232, 10%, 55%);
+    font-weight: 600;
+    font-size:1.7rem;
+    text-align: center;
+
+    
+}
+.client-review{
+    padding: 4rem;
+    width:80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: auto;
+}
+.card{
+    width:100%;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    gap:2.1rem;
+}
+.card img{
+    width:30%;
+    border-radius: 100px;
+}
+.card p{
+    color: hsl(213, 9%, 39%);
+font-size: 1rem;
+letter-spacing: 1px;
+  line-height: 1.6rem;
+}
+.client-info{
+    width:100%;
+    display: grid;
+    gap:0.6rem;
+}
+.card h5{
+    font-weight: 700;
+    color:black;
+    text-transform: capitalize;
+}
+p.client-job{
+    color: hsl(210, 4%, 67%);
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+@media(max-width:800px){
+    .client-review{
+        grid-template-columns: 1fr;
+    }
+}

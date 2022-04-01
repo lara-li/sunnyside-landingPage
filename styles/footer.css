@@ -1,0 +1,42 @@
+.footer{
+    background-color:hsl(168, 34%, 41%) ;
+}
+.column-3grid{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.column-3grid img{
+    width:100%;
+}
+.footer-text{
+    text-align: center;
+    display: grid;
+    gap:2rem;
+    padding:2rem 0;
+    place-content: center;
+    opacity: 0.6;
+}
+.footer-text>ul,.icon-container{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+.icon-container{
+    font-size: 1.6rem; 
+    margin-top: 2rem;
+
+}
+.icon-container i{
+    cursor: pointer;
+}
+.icon-container i:hover{
+    opacity: 0.8;
+    
+}
+.footer__links:hover{
+    opacity: 0.8;
+}
+
+

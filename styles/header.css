@@ -1,0 +1,127 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  padding: 2rem 2.5rem;
+  background: transparent;
+  color: rgb(253, 248, 248);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar___heading {
+  font-size: 2rem;
+}
+.navbar__links {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navbar__link {
+  transition: all 0.15s ease;
+}
+.navbar__link:hover {
+  color: rgba(250, 250, 250, 0.85);
+}
+
+.navbar__link--btn {
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(253, 248, 248);
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 3px 1px rgba(5, 5, 5, 0.4);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+.navbar__link--btn:hover {
+  background-color: transparent;
+  background: rgba(250, 250, 250, 0.4);
+  box-shadow: none;
+  color: rgb(253, 248, 248);
+}
+
+.hero-box {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.middle-heading {
+  font-size: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  justify-items: center;
+  width: fit-content;
+  gap: 2rem;
+  color: rgb(253, 248, 248);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.down-arrow {
+  font-size: 4rem;
+  font-weight: bold;
+  transform: scale(1.5);
+  width: fit-content;
+  height: 100%;
+  display: grid;
+  align-items: flex-start;
+  justify-items: center;
+  cursor: pointer;
+}
+.hamburger-icon,aside {
+  display: grid;
+  gap: 0.4rem;
+  cursor: pointer;
+  position: absolute;
+  top: -500px;
+}
+.hamburger-icon:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.hamburger-icon div {
+  padding: 0.2rem 2rem;
+  background-color: rgb(253, 248, 248);
+}
+@media (max-width: 785px) {
+  .navbar__links {
+    display: none;
+  }
+  .hamburger-icon,aside {
+    position: inherit;
+  }
+}
